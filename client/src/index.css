@@ -2,3 +2,13 @@
 .input {
   @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
+.glow-effect {
+  box-shadow: 0 0 20px 5px rgba(167, 139, 250, 0.5);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 20px 5px rgba(167, 139, 250, 0.5); }
+  50% { box-shadow: 0 0 30px 10px rgba(167, 139, 250, 0.8); }
+  100% { box-shadow: 0 0 20px 5px rgba(167, 139, 250, 0.5); }
+}

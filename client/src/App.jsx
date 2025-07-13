@@ -9,12 +9,13 @@ import BlogPostForm from './components/BlogPostForm'
 import GeminiSEOOptimizer from './components/GeminiSEOOptimizer'
 import GeminiAdCopy from './components/GeminiAdCopy'
 import HeroSection from './components/HeroSection'
+import Home from './pages/Home'
 
 const App = () => {
   return (
     <>
-    <HeroSection/>
-    <GeminiAdCopy />
+    <Home/>
+    {/* <GeminiAdCopy />
     <GeminiSEOOptimizer />
     <BlogPostForm />
       <GeminiForm />
@@ -22,7 +23,7 @@ const App = () => {
       <ReelGemini />
       <GeminiTone />
       <GeminiHash />
-      <ContentCalendarForm />
+      <ContentCalendarForm /> */}
     </>
   )
 }

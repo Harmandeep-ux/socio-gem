@@ -1,11 +1,10 @@
 import React from 'react'
 import GeminiForm from '../components/GeminiForm'
+import HeroSection from '../components/HeroSection'
 
 const Home = () => {
   return (
-    <div>Home
-      this is front page where i define my just first strucutre using some great animations
-    </div>
+   <HeroSection />
   )
 }
 
