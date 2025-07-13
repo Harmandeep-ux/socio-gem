@@ -4,6 +4,7 @@ import NET from "vanta/dist/vanta.net.min";
 import { motion } from "framer-motion";
 import CurvedLoop from "../../utils/CurvedLoop";
 import Home2 from "../pages/Home2";
+import Home3 from "../pages/Home3";
 
 const HeroSection = () => {
   const vantaRef = useRef(null);
@@ -92,6 +93,7 @@ const HeroSection = () => {
       </div>
 
 <Home2 />
+<Home3 />
 
 
     </>
