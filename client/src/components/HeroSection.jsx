@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import CurvedLoop from "../../utils/CurvedLoop";
 import Home2 from "../pages/Home2";
 import Home3 from "../pages/Home3";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const vantaRef = useRef(null);
@@ -73,7 +74,7 @@ const HeroSection = () => {
             transition={{ delay: 0.6, duration: 1 }}
           >
             <button className="px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full shadow-lg transition-all">
-              Try It Now
+               Try It Now
             </button>
             <button className="px-8 py-3 border border-white/30 hover:border-white/60 text-white font-medium rounded-full transition-all">
               Explore Features

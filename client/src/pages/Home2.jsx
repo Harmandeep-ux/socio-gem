@@ -1,5 +1,6 @@
 import RotatingText from '../../utils/RotatingText';
 import Aurora from "../../utils/Aurora";
+import { Link } from 'react-router-dom';
 
 
 const Home2 = () => {
@@ -50,7 +51,7 @@ const Home2 = () => {
 
       <div className="mt-8">
         <button className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-bold text-lg rounded-full shadow-lg transition-all animate-pulse">
-          Try AI Tools Now 🚀
+        <Link to='/layout'>Try AI Tools Now 🚀</Link>  
         </button>
       </div>
 

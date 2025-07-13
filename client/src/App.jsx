@@ -11,10 +11,12 @@ import GeminiAdCopy from './components/GeminiAdCopy'
 import HeroSection from './components/HeroSection'
 import Home from './pages/Home'
 
+import AppRouter from './routes/AppRouter'
+
 const App = () => {
   return (
     <>
-    <Home/>
+    <AppRouter/>
     {/* <GeminiAdCopy />
     <GeminiSEOOptimizer />
     <BlogPostForm />
