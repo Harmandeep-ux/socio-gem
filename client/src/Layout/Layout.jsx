@@ -1,6 +1,9 @@
 import React from 'react';
 import SpotlightCard from '../../utils/SpotlightCard';
 import Squares from '../../utils/Squares'; // ✅ Make sure this is your animated bg
+import { useNavigate } from 'react-router-dom';
+
+
 import {
   Sparkles,
   Wand2,
@@ -18,50 +21,61 @@ const features = [
     name: 'Ad Copy Generator',
     icon: <Wand2 size={32} className="text-pink-500" />,
     desc: 'Craft compelling ads for your product or service within seconds — headlines, CTAs, and body copy optimized for high conversions.',
+    route: '/ad-copy', // 
   },
   {
     name: 'SEO Optimizer',
     icon: <Brain size={32} className="text-green-400" />,
     desc: 'Boost your Google ranking by generating keyword-rich titles, meta descriptions, and SEO-friendly outlines tailored to your audience.',
+    route: '/seo',
+
   },
   {
     name: 'Blog Post Writer',
     icon: <FileText size={32} className="text-blue-400" />,
     desc: 'Easily generate long-form blogs or quick posts with an SEO structure, catchy intros, and relevant subheadings — all in your tone.',
+    route: '/blog-post',
   },
   {
     name: 'Content Generator',
     icon: <Sparkles size={32} className="text-yellow-400" />,
     desc: 'Create social media captions, product descriptions, video titles, outlines, and more — all infused with creativity and clarity.',
+    route: '/content',
   },
   {
     name: 'Email Writer',
     icon: <Mail size={32} className="text-cyan-400" />,
     desc: 'From cold outreach to promotional emails, automate your communication with structured, engaging, and personalized email content.',
+    route: '/email',
   },
   {
     name: 'Reel Caption AI',
     icon: <Video size={32} className="text-red-400" />,
     desc: 'Hook your viewers in the first second with scroll-stopping, trendy, and emotion-driven captions tailored to your video type.',
+    route: '/reel',
   },
   {
     name: 'Tone Rewriter',
     icon: <Type size={32} className="text-indigo-400" />,
     desc: 'Rephrase any text into formal, friendly, witty, persuasive, or even sarcastic tone — great for different platforms and audiences.',
+    route: '/tone',
   },
   {
     name: 'Hashtag Generator',
     icon: <Hash size={32} className="text-purple-400" />,
     desc: 'Reach more users by discovering the top-performing hashtags specific to your niche, platform, and content style.',
+    route: '/hashtags',
   },
   {
     name: 'Content Calendar',
     icon: <CalendarClock size={32} className="text-teal-400" />,
     desc: 'Plan a week or month of content instantly — organized by platform, format, time, and purpose. Save hours every week.',
+    route: '/calendar',
   },
 ];
 
 const Layout = () => {
+  const navigate = useNavigate()
   return (
     <div className="relative w-full min-h-screen bg-[#0a0a0a] text-white px-6 sm:px-8 py-20 overflow-hidden">
       
@@ -88,6 +102,7 @@ const Layout = () => {
               key={index}
               className="p-7 rounded-3xl border border-neutral-800 bg-[#121212] shadow-xl hover:shadow-cyan-500/20 transition-all duration-300 cursor-pointer"
               spotlightColor="rgba(0, 229, 255, 0.15)"
+              onClick={()=> navigate(feature.route)}
             >
               <div className="flex items-center gap-4 mb-4">
                 {feature.icon}
