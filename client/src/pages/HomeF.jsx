@@ -74,7 +74,7 @@ const features = [
 
 const HomeF = () => {
   return (
-    <div className="relative min-h-[70vh] bg-[#0a0a0a] text-white px-6 py-12 overflow-hidden">
+<div className="relative min-h-screen bg-[#0a0a0a] text-white px-6 py-12 overflow-hidden">
       {/* 🌌 Background Beams */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Beams
@@ -90,7 +90,7 @@ const HomeF = () => {
       </div>
 
       {/* 🌟 Content Layout */}
-      <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+<div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 min-h-[calc(100vh-8rem)] -mt-6">
         
         {/* Left: Text Content */}
         <div className="w-full lg:w-1/2 text-left">
@@ -107,7 +107,7 @@ const HomeF = () => {
 
         {/* Right: Animated Card Feature */}
       {/* Right: Animated Card Feature */}
-<div className="w-full lg:w-1/2 flex justify-center items-start min-h-[350px] pt-16">
+<div className="w-full lg:w-1/2 flex justify-center items-start min-h-[350px] -mt-6">
   <CardSwap
     cardDistance={60}
     verticalDistance={40}
