@@ -77,7 +77,7 @@ const HeroSection = () => {
                Try It Now
             </button>
             <button className="px-8 py-3 border border-white/30 hover:border-white/60 text-white font-medium rounded-full transition-all">
-              Explore Features
+             <Link to='/features'>Explore Features</Link> 
             </button>
           </motion.div>
 

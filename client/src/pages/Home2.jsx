@@ -1,10 +1,12 @@
 import RotatingText from '../../utils/RotatingText';
 import Aurora from "../../utils/Aurora";
 import { Link } from 'react-router-dom';
+import HomeF from './HomeF';
 
 
 const Home2 = () => {
   return (
+    <>
     <div className="relative w-full min-h-screen py-24 text-white overflow-hidden">
 
   {/* 🔮 Aurora Background Layer */}
@@ -110,6 +112,8 @@ const Home2 = () => {
 
   </div>
 </div>
+ <HomeF />
+    </>
   )
 }
 

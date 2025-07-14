@@ -13,6 +13,7 @@ import ReelGemini from '../components/ReelGemini'
 import GeminiTone from '../components/GeminiTone'
 import GeminiHash from '../components/GeminiHash'
 import GeminiContentCalendar from '../components/GeminiContentCalendar'
+import HomeF from '../pages/HomeF'
 
 const AppRouter = () => {
   return (
@@ -28,6 +29,7 @@ const AppRouter = () => {
       <Route path='/tone' element={<GeminiTone />} />
       <Route path='/hashtags' element={<GeminiHash />} />
       <Route path='/calendar' element={<GeminiContentCalendar />} />
+      <Route path='/features' element={<HomeF />} />
     </Routes>
   )
 }
