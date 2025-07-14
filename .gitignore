@@ -140,6 +140,6 @@ vite.config.ts.timestamp-*
 
 
 # 🔒 Custom sensitive files
-services/
+services/gemini.service.js
 helper/GeminiPrompt.js
 
