@@ -73,7 +73,7 @@ const Home4 = () => {
         {/* Location - subtle */}
         <div className="text-xs text-neutral-500/70 mb-8 tracking-wider">
           <p className="bg-neutral-900/50 px-3 py-1.5 rounded-full inline-block border border-neutral-800/50">
-            PUNJAB, INDIA • EST. 2023
+            PUNJAB, INDIA • EST. 2025
           </p>
         </div>
 
