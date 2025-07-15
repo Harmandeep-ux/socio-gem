@@ -60,17 +60,25 @@ Now create 5 distinct ${platform} posts about ${product} for ${audience}, using 
     }
 };
 
-export const generateEmail = async(req,res) =>{
-    const {emailType,product,recipient,tone} =req.body
-    const prompt = await generateEmailPrompt({emailType,product,recipient,tone})
+export const generateEmail = async (req, res) => {
+  const { emailType, product, recipient, tone } = req.body;
+  const prompt = await generateEmailPrompt({ emailType, product, recipient, tone });
 
-    try{
-     const result =await main(prompt)
-     return res.status(200).json({msg:"email generated successfully",result})
-    }catch(err){
-        return res.status(500).json({err:err.message})
-    }
-}
+  try {
+    const email = await main(prompt); // <- directly gives the email text
+
+    if (!email) throw new Error("No email content returned");
+
+    return res.status(200).json({
+      msg: "email generated successfully",
+      email,
+    });
+  } catch (err) {
+    console.error("❌ Email generation failed:", err.message);
+    return res.status(500).json({ err: err.message });
+  }
+};
+
 
 export const generateReelScript = async (req,res) =>{
     const {product, platform, tone, goal, duration,languageNote } =req.body
@@ -85,6 +93,8 @@ export const generateReelScript = async (req,res) =>{
 
 export const translateTone = async(req,res) =>{
     const {inputText,targetTone} = req.body
+      console.log("👉 Tone Input:", inputText, targetTone);
+
     try{
       const prompt = tonePrompt({inputText,targetTone})
       const result = await main(prompt)
