@@ -41,7 +41,7 @@ const Home4 = () => {
 
         {/* Project Description - refined */}
         <p className="text-lg text-neutral-400/90 mb-6 max-w-lg leading-relaxed tracking-tight">
-         An AI lab project by me — made to supercharge your content.
+          An AI lab project by me — made to supercharge your content.
         </p>
 
         {/* Quote - more professional */}
@@ -49,15 +49,15 @@ const Home4 = () => {
           "Empowering creators with intelligent automation"
         </p>
 
-        {/* Social Links - refined styling */}
+        {/* Social Links - updated GitHub & LinkedIn */}
         <div className="flex space-x-5 mb-8">
-          <a href="#" className="text-neutral-400 hover:text-blue-400 transition-colors duration-300 p-2 rounded-full hover:bg-neutral-800/50" aria-label="GitHub">
+          <a href="https://github.com/Harmandeep-ux" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-blue-400 transition-colors duration-300 p-2 rounded-full hover:bg-neutral-800/50" aria-label="GitHub">
             <Github size={20} />
           </a>
           <a href="#" className="text-neutral-400 hover:text-sky-400 transition-colors duration-300 p-2 rounded-full hover:bg-neutral-800/50" aria-label="Twitter">
             <Twitter size={20} />
           </a>
-          <a href="#" className="text-neutral-400 hover:text-blue-500 transition-colors duration-300 p-2 rounded-full hover:bg-neutral-800/50" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/harman-sahota-591a13318/" target="_blank" rel="noopener noreferrer" className="text-neutral-400 hover:text-blue-500 transition-colors duration-300 p-2 rounded-full hover:bg-neutral-800/50" aria-label="LinkedIn">
             <Linkedin size={20} />
           </a>
           <a href="mailto:contact@sociopostgen.com" className="text-neutral-400 hover:text-emerald-400 transition-colors duration-300 p-2 rounded-full hover:bg-neutral-800/50" aria-label="Email">
@@ -65,15 +65,16 @@ const Home4 = () => {
           </a>
         </div>
 
-        {/* Contact - more professional */}
+        {/* Contact - updated message */}
         <p className="text-sm text-neutral-400/80 mb-6 tracking-wide">
-          For inquiries: <a href="mailto:contact@sociopostgen.com" className="text-blue-400 hover:underline font-medium">contact@sahotaharman59111</a>
+          Wanna collab? <a href="mailto:sahotaharman59111@gmail.com" className="text-blue-400 hover:underline font-medium">sahotaharman59111@gmail.com</a>
         </p>
 
         {/* Location - subtle */}
         <div className="text-xs text-neutral-500/70 mb-8 tracking-wider">
           <p className="bg-neutral-900/50 px-3 py-1.5 rounded-full inline-block border border-neutral-800/50">
             PUNJAB, INDIA • EST. 2025
+           
           </p>
         </div>
 
@@ -81,6 +82,8 @@ const Home4 = () => {
         <div className="text-xs text-neutral-500/60 mb-4 tracking-wider">
           <p>© {new Date().getFullYear()} RankLift</p>
           <p className="mt-1">All rights reserved</p>
+           <br />
+           Made with Love by Harman 💓
         </div>
 
         {/* Scroll to top - refined */}
