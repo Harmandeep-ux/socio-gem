@@ -1,10 +1,10 @@
-// import { GoogleGenAI } from "@google/genai";
-// import dotenv from "dotenv";
-// dotenv.config()
+import { GoogleGenAI } from "@google/genai";
+import dotenv from "dotenv";
+dotenv.config()
 
-// const ai = new GoogleGenAI({
-//   apiKey: process.env.GEMINI_API_KEY,     // Your Gemini API key (if 
-// });
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY,     // Your Gemini API key (if 
+});
 
 // export const  main = async(prmpt) => {
 //   try {
