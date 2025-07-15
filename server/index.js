@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cors({
   origin: [
     // 'http://localhost:5173', 
-    'https://socio-gem.vercel.app',
+    "https://socio-gem-harmandeep-singhs-projects-00820b2c.vercel.app",
   ],
   methods: "GET,POST,PUT,DELETE,PATCH",
   allowedHeaders: ["Content-Type", "Authorization"],
