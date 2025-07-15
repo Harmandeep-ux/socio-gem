@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Home2 from '../pages/Home2'
 import Home3 from '../pages/Home3'
 
 const HeroSection = () => {
+
+  const navigate = useNavigate()
   return (
     <>
     <div className="relative w-full h-screen bg-black overflow-hidden">
@@ -67,7 +69,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <button className="relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold rounded-lg shadow-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group overflow-hidden">
+          <button onClick={() => navigate('/layout')} className="relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold rounded-lg shadow-2xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.3)] group overflow-hidden">
             <span className="relative z-10">Try It Now</span>
             <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
