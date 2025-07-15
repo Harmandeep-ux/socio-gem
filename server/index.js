@@ -9,10 +9,9 @@ const app = express()
  
 app.use(express.json())
 app.use(cors({
-  origin: [
-    'http://localhost:5173', 
-    'https://socio-gem.vercel.app' 
-  ],
+  origin: "https://socio-gem.vercel.app",
+  methods: "GET,POST,PUT,DELETE,PATCH", // Corrected the methods string
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 }));
 
