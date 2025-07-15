@@ -13,8 +13,8 @@ const EmailGemini = () => {
     setLoading(true);
     setEmailText("");
     try {
-      const res = await axiosInstance.post("/generate-email", data);
-      setEmailText(res.data.result);
+      const res = await axiosInstance.post("/generate-email", data); 
+      setEmailText(res.data.email);
     } catch (err) {
       console.log(err.message);
     } finally {
