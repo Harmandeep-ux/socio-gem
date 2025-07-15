@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { useForm } from "react-hook-form";
 import Beams from "../../utils/Beams";
 import { Sparkles } from "lucide-react";
+import axiosInstance from "../api/axiosInstance";
 
 const BlogPostForm = () => {
   const { register, handleSubmit } = useForm();
@@ -14,7 +14,7 @@ const BlogPostForm = () => {
     setLoading(true);
     setResult("");
     try {
-      const res = await axios.post("http://localhost:5000/api/generate-blog", data);
+      const res = await axiosInstance.post("/generate-blog", data);
       setResult(res.data.result);
     } catch (err) {
       console.error(err);
