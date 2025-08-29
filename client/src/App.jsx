@@ -17,15 +17,6 @@ const App = () => {
   return (
     <>
     <AppRouter/>
-    {/* <GeminiAdCopy />
-    <GeminiSEOOptimizer />
-    <BlogPostForm />
-      <GeminiForm />
-      <EmailGemini />
-      <ReelGemini />
-      <GeminiTone />
-      <GeminiHash />
-      <ContentCalendarForm /> */}
     </>
   )
 }
